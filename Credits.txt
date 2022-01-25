@@ -1,0 +1,14 @@
+q4a - CCO:
+resource/models/mainmenu/mainmenu_locators.gm
+resource/textures/interfaces/cursor32.tga.tx
+resource/textures/mainmenu/russian/TextLSC01.tga.tx
+resource/textures/mainmenu/russian/TextLSC02.tga.tx
+
+https://opengameart.org/content/pirate-ship-0 - CC0:
+resource/models/mainmenu/mainmenu.gm
+
+https://opengameart.org/content/animated-water-texture-128px - CCO:
+resource/sea00**.tga
+
+https://opengameart.org/content/beach-ocean-waves - CCO:
+resource/sounds/ambient/land/sea_for_menu_01.wav

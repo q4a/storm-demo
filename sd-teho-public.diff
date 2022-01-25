@@ -1,0 +1,51 @@
+diff --git a/engine.ini b/engine.ini
+index e73ca95..8d8d33a 100644
+--- a/engine.ini
++++ b/engine.ini
+@@ -2,8 +2,8 @@ modules path = modules\
+ full_screen = 0
+ PostProcess = 0
+ max_fps = 200
+-screen_x = 1920
+-screen_y = 1080
++screen_x = 1280
++screen_y = 720
+ lockable_back_buffer = 0
+ show_exinfo = 0
+ screen_bpp = D3DFMT_X8R8G8B8
+diff --git a/program/interface/mainmenu.c b/program/interface/mainmenu.c
+index 38da0cf..784161e 100644
+--- a/program/interface/mainmenu.c
++++ b/program/interface/mainmenu.c
+@@ -248,10 +248,12 @@ void CreateBackEnvironment()
+
+        aref arMenu;
+        makearef(arMenu,InterfaceBackScene.menu);
++/*
+        arMenu.l1.locname = "menu02";   arMenu.l1.sel = "mainmenu\menu02_active"
+;       arMenu.l1.norm = "mainmenu\menu02_passive"; arMenu.l1.event = "New";
+                arMenu.l1.path = LanguageGetLanguage();
+        arMenu.l2.locname = "menu03";   arMenu.l2.sel = "mainmenu\menu03_active"
+;       arMenu.l2.norm = "mainmenu\menu03_passive"; arMenu.l2.event = "Load";
+                arMenu.l2.path = LanguageGetLanguage();
+        arMenu.l3.locname = "menu04";   arMenu.l3.sel = "mainmenu\menu04_active"
+;       arMenu.l3.norm = "mainmenu\menu04_passive"; arMenu.l3.event = "Options";
+                arMenu.l3.path = LanguageGetLanguage();
+        arMenu.l4.locname = "menu05";   arMenu.l4.sel = "mainmenu\menu05_active"
+;       arMenu.l4.norm = "mainmenu\menu05_passive"; arMenu.l4.event = "Credits";
+                arMenu.l4.path = LanguageGetLanguage();
++*/
+        arMenu.l5.locname = "menu06";   arMenu.l5.sel = "mainmenu\menu06_active"
+;       arMenu.l5.norm = "mainmenu\menu06_passive"; arMenu.l5.event = "Exit";
+                arMenu.l5.path = LanguageGetLanguage();
+        if( DLCAppID > 0 )
+        {
+@@ -264,7 +266,7 @@ void CreateBackEnvironment()
+        SendMessage(&InterfaceBackScene, "lla", 3, 1, arMenu ); // set menu
+
+        // create ship
+-       MainMenu_CreateShip();
++       //MainMenu_CreateShip();
+
+ /*
+        if( Whr_IsNight() )
